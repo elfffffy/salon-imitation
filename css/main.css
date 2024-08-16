@@ -1,0 +1,205 @@
+@charset 'utf-08';
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('font/프리텐다드/Pretendard-Regular.woff2') format('woff2'),
+        url('font/프리텐다드/Pretendard-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('font/프리텐다드/Pretendard-Medium.woff2') format('woff2'),
+        url('font/프리텐다드/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('font/프리텐다드/Pretendard-Bold.woff2') format('woff2'),
+        url('font/프리텐다드/Pretendard-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('font/프리텐다드/Pretendard-SemiBold.woff2') format('woff2'),
+        url('font/프리텐다드/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    color: #333;
+    line-height: 1;
+    font-family: 'Pretendard';
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.main {
+    margin-top: 11.5rem;
+    padding-bottom: 15rem;
+    /* margin-bottom: 15rem; */
+}
+
+.mySwiper {
+    width: 100%;
+    /* height: 28vw; */
+}
+
+.main {
+    position: relative;
+}
+
+.swiper-slide {
+    max-width: 836px;
+    width: 100%;
+    margin: 0 auto;
+    height: 395px;
+}
+
+.mySwiper .swiper-slide > div {
+    width: 100%;
+    height: 100%;
+}
+
+.mySwiper .swiper-slide div a {
+    display: block;
+    width: 100%;
+}
+
+.mySwiper .swiper-slide div figure {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.mySwiper .swiper-slide div figure a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* icon */
+.mySwiper .swiper_container {
+    position: relative;
+    margin-bottom: 15rem;
+}
+
+.mySwiper .swiper_container .swiper {
+    position: static;
+}
+
+.mySwiper .swiper-button-next,
+.swiper-button-prev {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.mySwiper .swiper-button-prev,
+.mySwiper .swiper-rtl .swiper-button-next {
+    background: url('../img/prev-btn.png') center center / 100% no-repeat;
+    box-shadow: 0 5px 20px rgba(0, 15, 68, 0.2);
+
+    /* left: 24%;
+    top: 50%;
+    transform: translateY(-50%); */
+
+    left: calc(50% - 450px);
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 8rem;
+    height: 8rem;
+}
+
+.mySwiper .swiper-button-next,
+.mySwiper .swiper-rtl .swiper-button-prev {
+    background: url('../img/next-btn.png') center center / 100% no-repeat;
+    box-shadow: 0 0.5px 20px rgba(0, 15, 68, 0.2);
+    
+    transform: translateY(-50%);
+    width: 8rem;
+    height: 8rem;
+
+    right: calc(50% - 450px);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.mySwiper .swiper-button-next:after,
+.mySwiper .swiper-rtl .swiper-button-prev:after {
+    display: none;
+}
+
+.mySwiper .swiper-button-prev:after,
+.mySwiper .swiper-rtl .swiper-button-next:after {
+    display: none;
+}
+
+.mySwiper .swiper-pagination {
+    position: static;
+    margin-top: 2rem;
+    z-index: 99;
+}
+
+.mySwiper .swiper-pagination-bullet {
+    background-color: #C1C9DC;
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50px;
+}
+
+.mySwiper .swiper-pagination-bullet-active {
+    background-color: #4478FF;
+    width: 43px;
+}
+
+.mySwiper .swiper-horizontal>.swiper-pagination-bullets,
+.mySwiper .swiper-pagination-bullets.swiper-pagination-horizontal,
+.mySwiper .swiper-pagination-custom,
+.mySwiper .swiper-pagination-fraction {
+    bottom: 0;
+}
