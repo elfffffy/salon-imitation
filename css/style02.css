@@ -381,6 +381,7 @@ body {
 .mySwiper .swiper-button-next {
     top: 22px;
     right: -40px; /* width / 2 = 80 / 2 */
+    background: url('../img/next-btn.png') center center / 100% no-repeat #fff;
 }
 
 .mySwiper .swiper-button-prev {
