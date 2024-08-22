@@ -1363,6 +1363,7 @@ body {
     }
     
     .mySwiper .swiper-button-next {
+        background: url(../img/next-btn.png) center center / 100% no-repeat #fff;
         top: 22px;
         right: -32px; /* width / 2 = 64 / 2 */
     }
@@ -1719,6 +1720,7 @@ body {
     }
     
     .mySwiper .swiper-button-next {
+        background: url(../img/next-btn.png) center center / 100% no-repeat #fff;
         top: 22px;
         right: -22.5px;
     }
@@ -1966,6 +1968,7 @@ body {
     }
     
     .mySwiper .swiper-button-next {
+        background: url(../img/next-btn.png) center center / 100% no-repeat #fff;
         top: 22px;
         right: -12.8px; /* width / 2 = 25.6 / 2 */
     }
