@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>슬유살롱</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style02.css" />
 </head>
 
 <body>
@@ -173,8 +173,10 @@
                     </div><!-- .swiper-slide end -->
                 </div>
                 <div class="swiper-pagination"></div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="swiper_btn">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div><!-- .swiper_btn end -->
             </div>
         </div><!-- .swiper_container end -->
     </main><!-- .main end -->
@@ -632,7 +634,6 @@
                 disableOnInteraction: false,
             },
             slidesPerView: 'auto',
-            spaceBetween: 100,
             centeredSlides: true,
             pagination: {
                 el: ".swiper-pagination",
